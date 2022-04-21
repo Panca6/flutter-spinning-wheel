@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:meta/meta.dart';
+
 
 const Map<int, Offset> cuadrants = const {
   1: Offset(0.5, 0.5),

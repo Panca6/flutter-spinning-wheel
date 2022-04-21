@@ -255,7 +255,7 @@ class _SpinningWheelState extends State<SpinningWheel>
     var modulo = _motion.modulo(_currentDistance + _initialSpinAngle);
     _currentDivider = widget.dividers - (modulo ~/ _dividerAngle) as int?;
     if (_animationController.isCompleted) {
-      _initialSpinAngle = modulo;
+      _initialSpinAngle = _currentDivider! * (pi / 3);
       _currentDistance = 0;
     }
   }
